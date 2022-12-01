@@ -12,3 +12,7 @@ AUTH_CLIENT_ID=lIY9KEl09Moz356G94mNTHWIfx3Erj5I
 # PETSTAGRAM
 
 Your favorite website for discovering pets and then judging them harshly!
+
+## Trello
+
+https://trello.com/b/5WnuGC3S/socialforummg
