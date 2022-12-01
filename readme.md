@@ -31,8 +31,9 @@ Jordan
 
 Posts > comments > comments recursivly
 
-Posts. upvotes, downvotes, total votes, commentIDs[], **comments, picture, posterId, **poster, title, commentCount , description, species, STRETCH Categories
-Comments. upvotes, downvotes, total votes, commmentsIds[], **comments, ReplyCount, posterId[], **poster, body,
+Posts. upvotesIds[], downvotesIds[], commentIDs[], **comments, picture, posterId, **poster, title, commentCount , body, species, STRETCH Categories[]
+
+Comments. upvotesIds[], downvotesIds[], posterId, \*\*poster, body,
 
 # API
 
@@ -41,10 +42,15 @@ Post Details / Comments : api/posts/ID
 
 Add Post : post/api/posts
 Add Comment : post/api/posts/id
-Add comment to comment post/api/comments/id
 
-Remove Post delete/api/posts/id
-Remove comment delete/api/comments/id
+Remove Post delete/api/posts/id ?? make sure owner is the one removing
+Remove comment delete/api/comments/id ?? make sure owner is the one removing
 
-Edit post put/api/posts/id
-Edit Comment put/api/comments/id
+Edit post put/api/posts/id ?? make sure owner is the one editing
+Edit Comment put/api/comments/id ?? make sure owner is the one editing
+
+Upvote post/api/posts/id/upvote ?? make sure owner is the one editing
+Upvote post/api/Comments/id/upvote ?? make sure owner is the one editing
+
+Downvote delete/api/posts/id/downvote ?? make sure owner is the one editing
+Downvote delete/api/Comments/id/downvote ?? make sure owner is the one editing
