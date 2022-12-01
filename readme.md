@@ -31,8 +31,8 @@ Jordan
 
 Posts > comments > comments recursivly
 
-Posts. upvotes, downvotes, total votes, commentIDs[], picture, posterId, title, commentCount , description, species, STRETCH Categories
-Comments. upvotes, downvotes, total votes, commmentsIds[], ReplyCount, posterId[], body,
+Posts. upvotes, downvotes, total votes, commentIDs[], **comments, picture, posterId, **poster, title, commentCount , description, species, STRETCH Categories
+Comments. upvotes, downvotes, total votes, commmentsIds[], **comments, ReplyCount, posterId[], **poster, body,
 
 # API
 
