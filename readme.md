@@ -16,3 +16,35 @@ Your favorite website for discovering pets and then judging them harshly!
 ## Trello
 
 https://trello.com/b/5WnuGC3S/socialforummg
+
+## Backened Team
+
+Julio
+Lucas
+
+## Frontend
+
+Derek
+Jordan
+
+# Schema
+
+Posts > comments > comments recursivly
+
+Posts. upvotes, downvotes, total votes, commentIDs[], picture, posterId, title, commentCount , description, species, STRETCH Categories
+Comments. upvotes, downvotes, total votes, commmentsIds[], ReplyCount, posterId[], body,
+
+# API
+
+All Posts : /api/posts
+Post Details / Comments : api/posts/ID
+
+Add Post : post/api/posts
+Add Comment : post/api/posts/id
+Add comment to comment post/api/comments/id
+
+Remove Post delete/api/posts/id
+Remove comment delete/api/comments/id
+
+Edit post put/api/posts/id
+Edit Comment put/api/comments/id
