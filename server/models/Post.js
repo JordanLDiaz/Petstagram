@@ -45,6 +45,7 @@ PostSchema.virtual("upvoteCount").get(function () {
 });
 PostSchema.virtual("downvoteCount").get(function () {
   return this.downvoteIds.length;
+  //   aghh
 });
 PostSchema.virtual("totalVotes").get(function () {
   return this.downvoteIds.length + this.upvoteIds.length;
