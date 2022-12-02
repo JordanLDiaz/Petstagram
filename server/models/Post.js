@@ -7,6 +7,7 @@ export const PostSchema = new Schema({
     description: { type: String, required: false, maxLength: 500 },
     species: { type: String, enum: ['dog', 'cat', 'fish', 'birds', 'reptiles', 'amphibians', 'other'], required: false },
     posterId: { type: Schema.Types.ObjectId, required: true, ref: 'Account' },
+    u
 },
     { timestamps: true, toJSON: { virtuals: true } }
 )
@@ -17,3 +18,4 @@ PostSchema.virtual('poster', {
     justOne: true,
     ref: 'Account'
 })
+
