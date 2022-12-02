@@ -12,7 +12,7 @@ function _drawPosts() {
 
 export class PostsController {
   constructor() {
-    appState.on("posts");
+    appState.on("posts", _drawPosts);
     console.log("hello from posts controller");
     postsService.getAllPosts();
   }

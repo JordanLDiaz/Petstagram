@@ -4,8 +4,8 @@ import { Post } from "../Models/Post.js";
 class PostsService {
   async getAllPosts() {
     const res = await axios.get("api/posts");
+    console.log(res);
     appState.posts = res.data.map((p) => new Post(p));
-    console.log(appState.posts, "posts");
   }
 
   async addPost(data) {
