@@ -13783,4 +13783,12 @@ p {
   color: inherit;
 }
 
+.btn-close {
+  background-blend-mode: difference;
+}
+
+#comments {
+  overflow-y: auto;
+}
+
 /*# sourceMappingURL=main.css.map */
