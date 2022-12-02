@@ -1,4 +1,5 @@
 import { appState } from "../AppState.js";
+import { Post } from "../Models/Post.js";
 import { postsService } from "../Services/PostsService.js";
 import { getFormData } from "../Utils/FormHandler.js";
 import { Pop } from "../Utils/Pop.js";
@@ -25,9 +26,16 @@ export class PostsController {
     }
   }
 
-  async addPost() {
+  getPostForm() {
+    setHTML('postModalContent', Post.getPostForm())
+  }
+
+  async createPost() {
     window.event.preventDefault();
     let data = getFormData(window.event.target);
-    postsService.addPost(data);
+    postsService.createPost(formData);
   }
+
+
+
 }

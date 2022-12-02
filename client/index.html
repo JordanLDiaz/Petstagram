@@ -17,6 +17,8 @@
 <body>
 	<header class="d-flex  gap-5 text-primary  bg-secondary align-items-center p-3">
 		<h1 class="flex-grow-1">PET<span class="text-white">STAGRAM</span></h1>
+		<button class="btn btn-warning" data-bs-toggle="modal" data-bs-target="#postModal"
+			onclick="app.postsController.getPostForm()">Create</button>
 		<button class="btn btn-primary">Recent</button>
 		<button class="btn btn-primary">Controversial</button>
 		<button class="btn btn-primary">Trending</button>
@@ -57,6 +59,32 @@
 
 	</main>
 
+	<div class="modal fade" id="postModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+		<div class="modal-dialog modal-lg">
+			<div class="modal-content" id="postModalContent">
+				<!-- <div class="modal-header">
+					<h1 class="modal-title fs-5" id="exampleModalLabel">Modal title</h1>
+					<button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+				</div>
+				<div class="modal-body container-fluid">
+					<div class="row">
+						<div class="col-6">
+							<img class="img-fluid" src="https://thiscatdoesnotexist.com" alt="">
+						</div>
+						<div class="col-6">
+							show me the bird facts
+						</div>
+					</div>
+				</div>
+				<div class="modal-footer">
+					<button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+					<button type="button" class="btn btn-primary">Save changes</button>
+				</div> -->
+			</div>
+		</div>
+	</div>
+
+
 	<footer>
 	</footer>
 
@@ -73,7 +101,8 @@
 							<img src="https://thiscatdoesnotexist.com" alt="pet" class="img-fluid">
 							<div>
 								<h3>Title</h3>
-								<p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quia, officia dolorum! Voluptatibus autem
+								<p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quia, officia dolorum!
+									Voluptatibus autem
 									sequi molestiae.</p>
 							</div>
 						</div>
@@ -84,8 +113,8 @@
 									<div class="p-1 align-content-center fs-4">PosterName</div>
 								</div>
 								<div class="align-items-start">
-									<button type="button" class="text-primary bg-secondary border-0 fs-3" data-bs-dismiss="modal"
-										aria-label="Close">X</button>
+									<button type="button" class="text-primary bg-secondary border-0 fs-3"
+										data-bs-dismiss="modal" aria-label="Close">X</button>
 								</div>
 							</div>
 							<div class="d-flex gap-2 justify-content-end">

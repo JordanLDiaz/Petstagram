@@ -1,3 +1,4 @@
+import { Server } from "socket.io";
 import { appState } from "../AppState.js";
 import { Post } from "../Models/Post.js";
 
@@ -8,11 +9,14 @@ class PostsService {
     appState.posts = res.data.map((p) => new Post(p));
   }
 
-  async addPost(data) {
-    const res = await axios.post("api/posts", data);
+  async createPost(formData) {
+    const res = await axios.post("api/posts", formData);
     console.log(res);
     appState.posts = [...appState.posts, new Post(res)];
   }
+
+
+
 }
 
 export const postsService = new PostsService();
