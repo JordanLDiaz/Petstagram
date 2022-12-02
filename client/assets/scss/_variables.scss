@@ -1,9 +1,9 @@
-$body-bg: #e8e8e8;
-$primary: #274373;
-$secondary: #aeb0c5;
-$success: #5F732D;
+$body-bg: #1d1d1d;
+$primary: rgb(143, 229, 255);
+$secondary: #2b2b2b;
+$success: hsl(77, 100%, 76%);
 $info: #4f3862;
-$warning: #8a4f04;
+$warning: hsl(0, 100%, 74%);
 $danger: #890012;
 $light: #e9ecef;
 $dark: #111927;
@@ -14,24 +14,24 @@ $font-monospace: SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Co
 $gradient: linear-gradient(180deg, hsla(0, 0%, 100%, 0.15), hsla(0, 0%, 100%, 0));
 
 $colors: (
-  "primary": $primary,
-  "secondary": $secondary,
-  "danger": $danger,
-  "success": $success,
-  "warning": $warning,
-  "info": $info,
-  "dark": $dark,
-  "grey": $grey,
+	"primary": $primary,
+	"secondary": $secondary,
+	"danger": $danger,
+	"success": $success,
+	"warning": $warning,
+	"info": $info,
+	"dark": $dark,
+	"grey": $grey,
 );
 
 $color-ranges: (
-  0: 0,
-  5: 5,
-  10: 10,
-  15: 15,
-  20: 20,
-  25: 25,
-  30: 30,
-  35: 35,
-  40: 40,
+	0: 0,
+	5: 5,
+	10: 10,
+	15: 15,
+	20: 20,
+	25: 25,
+	30: 30,
+	35: 35,
+	40: 40,
 );
