@@ -4,8 +4,8 @@ import { BadRequest, Forbidden } from "../utils/Errors.js";
 import { logger } from "../utils/Logger.js";
 
 class PostsService {
-  async createPost(body) {
-    const post = await dbContext.Posts.create(body);
+  async createPost(postData) {
+    const post = await dbContext.Posts.create(postData);
     await post.populate("poster", "name");
     return post;
   }
@@ -28,8 +28,6 @@ class PostsService {
 
   async deletePost(userId, postId) {
     const post = await dbContext.Posts.findById(postId);
-    logger.log(post.id);
-    logger.log(userId);
     if (post) {
       if (userId == post.posterId) {
         return await dbContext.Posts.findByIdAndDelete(postId);
@@ -39,6 +37,10 @@ class PostsService {
     } else {
       throw new BadRequest("Cant find a post with that ID");
     }
+  }
+  async updatePost(userId, postData) {
+    const updatedPost = await dbContext.Posts.findByIdAndUpdate(userId, postData)
+    return updatedPost
   }
 }
 
