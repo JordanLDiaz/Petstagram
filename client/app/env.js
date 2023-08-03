@@ -1,6 +1,6 @@
 export const dev = window.location.origin.includes("localhost");
 export const baseURL = dev ? "http://localhost:3000" : "";
 export const useSockets = false;
-export const domain = "dev-0v0iohje0isldio2.us.auth0.com";
+export const domain = "dev-wra2r4u13787lot5.us.auth0.com";
 export const audience = "https://classroom.com";
-export const clientId = "lIY9KEl09Moz356G94mNTHWIfx3Erj5I";
+export const clientId = "Wcq0CtKAqonSFxcd1VwYcURAxkuwcs8t";
